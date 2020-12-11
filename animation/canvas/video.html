@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 2、CSS中，使video隐藏 */
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1、HTML中
+    ① 给video标签增加属性，使浏览器调用h5原生video -->
+    <video id="testVideo" x5-video-player-type='h5' autoplay muted loop x5-video-player-fullscreen='true'>
+        <source src="./media/5.mp4" type="video/webm">
+    </video>
+    <!-- ②在页面中添加canvas画布 -->
+    <canvas id="testCanvas"></canvas>
+
+
+
+
+<script>
+    // 3、js代码配置
+    /*以下是渲染CANVAS画布中的视频*/
+    //获取video
+    var videoW = 1000,videoH = 500;
+    var TestVideo=document.getElementById("testVideo");
+        //获取canvas画布
+    var TestCanvas=document.getElementById("testCanvas");
+    TestCanvas.addEventListener("click",function () {TestVideo.play();  })
+        //设置画布
+    var TestCanvas2D=TestCanvas.getContext('2d');
+        //设置setinterval定时器
+    var TestVideoTimer=null;
+        //监听播放
+    TestVideo.addEventListener('play',function() {
+        TestVideoTimer=setInterval(function() {
+            TestCanvas2D.clearRect(0,0,videoW,videoH);
+            TestCanvas2D.drawImage(TestVideo,0,0,videoW,videoH,0,0,1000,500);
+        },20);
+    },false);
+        //监听暂停
+    TestVideo.addEventListener('pause',function() {
+        clearInterval(TestVideoTimer);
+    },false);
+        //监听结束
+    TestVideo.addEventListener('ended',function() {
+        clearInterval(TestVideoTimer);
+    },false);
+    
+</script>
+</body>
+</html>
