@@ -1,0 +1,13 @@
+.ab{position: absolute;}
+.abLT{position: absolute;top:0;left:0;}
+.abCT{position: absolute;left: 50%;top: 0;transform: translate(-50%,0);}
+.abCB{position: absolute;left: 50%;bottom: 0;transform: translate(-50%,0);}
+.abCC{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.abLB{position: absolute;left: 0;bottom: 0;} 
+.abRT{position: absolute;top: 0;right: 0;}
+.abRB{position: absolute;bottom: 0;right: 0;}
+
+.full{width:100%;height: 100%;}
+.page{z-index:2;}
+.hide{display:none;} 
+.popup{width:100%;height: 100%;background:rgba(0,0,0,0,5);}
