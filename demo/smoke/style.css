@@ -45,6 +45,6 @@ section video{
 
 
 /* 文字扫光动画 */
-.ld2_text1{-webkit-mask-image: url(../images/text1.png?v=4);mask-image: url(../images/group2/index/text1.png?v=4);width: 4.5rem;height: 0.71rem;}
-.maskedText{background-image: url(../images/mask.jpg?v=4);mask-repeat: no-repeat;-webkit-mask-repeat: no-repeat;-webkit-animation: maskedAni 2s infinite;background-size: 300% 100%;}
+.ld2_text1{-webkit-mask-image: url(../images/group2/index/text1.png?v=4);mask-image: url(../images/group2/index/text1.png?v=4);width: 4.5rem;height: 0.71rem;}
+.maskedText{background-image: url(../images/public/mask.jpg?v=4);mask-repeat: no-repeat;-webkit-mask-repeat: no-repeat;-webkit-animation: maskedAni 2s infinite;background-size: 300% 100%;}
 @-webkit-keyframes maskedAni {0%  { background-position:100% 0;}100% { background-position:0% 0 ;}}

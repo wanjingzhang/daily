@@ -1,0 +1,14 @@
+*{width:100%;height: 100vh;border: 0;margin: 0;box-sizing: border-box; }
+.circleProgress_wrapper{width: 200px;height: 200px;margin: 80px auto;position: relative;border:1px solid #ddd;}
+.wrapper{width: 100px;height: 200px;position: absolute;top:0;overflow: hidden;}
+.right{right:0;}
+.left{left:0;}
+.circleProgress{width: 200px;height: 200px;border:20px solid rgb(232, 232, 12);border-radius: 50%;position: absolute;top:0;-webkit-transform: rotate(45deg);}
+.rightcircle{border-top:20px solid green;border-right:20px solid green;right:0;-webkit-animation: circleProgressLoad_right 5s linear infinite;}
+.leftcircle{border-bottom:20px solid green;border-left:20px solid green;left:0;-webkit-animation: circleProgressLoad_left 5s linear infinite;}
+@-webkit-keyframes circleProgressLoad_right{0%{ -webkit-transform: rotate(45deg);}50%{ -webkit-transform: rotate(225deg);}100%{ -webkit-transform: rotate(225deg);}}
+@-webkit-keyframes circleProgressLoad_left{0%{ -webkit-transform: rotate(45deg);}50%{ -webkit-transform: rotate(45deg);}100%{ -webkit-transform: rotate(225deg);}}
+
+@-webkit-keyframes maskedAni {0%{ background-position:100% 0;}100% { background-position:0% 0 ;}} 
+.maskedText{background-image: url(../images/mask.jpg);mask-repeat: no-repeat;-webkit-mask-repeat: no-repeat;-webkit-animation: maskedAni 2s infinite;background-size: 300% 100%;}
+.ld2_text1{-webkit-mask-image: url(../images/text1.png);mask-image: url(../images/text1.png);width: 450px;height: 71px;}

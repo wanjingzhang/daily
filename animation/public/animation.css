@@ -1,5 +1,0 @@
-.snowRoll{-webkit-animation: rotateAni 10s infinite forwards linear;}
-.snowRollSlow{-webkit-animation: rotateAni 20s infinite forwards linear;}
-@-webkit-keyframes rotateAni{0%{transform: none;} 100%{transform:rotate(360deg);}}
-.btnAni {-webkit-animation: btnAni 3s infinite ease-in-out;}
-@-webkit-keyframes btnAni{0%,20%,100%{transform: scale(1);} 10%{transform: scale(1.1);}}
