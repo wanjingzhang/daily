@@ -1,0 +1,2 @@
+<!--pages/components/custom-component/custom-component.wxml-->
+<input model:value="{{myValue}}" />

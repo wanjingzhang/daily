@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "查看启动日志",
+  "usingComponents": {
+    "component-tag-name":"../components/cpt/cpt",
+    "custom-component":"../components/custom-component/custom-component"
+  },
+  "pageOrientation": "auto"
+}

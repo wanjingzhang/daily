@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<!--logs.wxml-->
+<view class="container log-list">
+  <!-- 以下是对一个自定义组件的引用 -->
+   三个按钮总和: {{total}}
+  <component-tag-name bindincrement="incrementTotal" num="2"></component-tag-name>
+  <component-tag-name bindincrement="incrementTotal" num="3"></component-tag-name>
+  <component-tag-name bindincrement="incrementTotal" num="5"></component-tag-name> 
+  <label>双向绑定：</label>
+  <label>页面中的双向绑定：</label>
+  <input model:value="{{value}}" />
+  <label>自定义组件的双向绑定：</label> 
+  <custom-component model:my-value="{{pageValue}}" />
+</view>
